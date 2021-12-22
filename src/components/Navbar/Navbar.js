@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import {Toolbar } from '@material-ui/core';
+import {Toolbar, Box } from '@material-ui/core';
 import { AiOutlineMenu as MenuIcon} from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import { sidebarData } from './SidebarData'
@@ -13,15 +13,15 @@ function NavBar() {
 
     return (
         <Fragment>
-            <Toolbar classNAme= {classes.navbar}>
-                <box className='logo-image'>
-                    <img src={ logoImage } />
-                </box>
+            <div className= 'navbar'>
+                <Link to='/' onClick={showSidebar} className='logo-image'>
+                    <img src={ logoImage }/>
+                </Link>
 
                 <Link to='#' className='menu-icon' onClick = {showSidebar}>
                     <MenuIcon  />
                 </Link>
-            </Toolbar>
+            </div>
             
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu' }>
                 <ul>

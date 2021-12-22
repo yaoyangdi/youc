@@ -1,0 +1,19 @@
+
+.food-image img{
+    position:absolute;
+    width: 100%;
+    height: 50;
+    max-width: 100%;
+    filter: brightness(75%);
+
+}
+
+.head-text {
+    position: relative;
+    color: #fff;
+    font-weight: 850;
+    top: 0.2em;
+    font-size: 3.5em;
+    text-align: center;
+    line-height: 1.2em;
+ }

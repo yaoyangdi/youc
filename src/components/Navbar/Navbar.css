@@ -1,40 +1,45 @@
 .logo-image img {
-    height: 25%;
-    width: 25%;
-    margin-left: 200px;
+    height: 35%;
+    width: 35%;
+    margin-left: 10em;
+    margin-top: 3rem;
 }
 
 .navbar {
     background-color: #fff;
-    height: 90 px;
     display: flex;
+    height: 5em;
     justify-content: start;
     align-items: center;
 }
 
 .menu-icon {
-    margin-left: 2rem;
-    font-size: 4rem;
+    right: 10%;
+    margin-top: 9vh;
+    margin-right: 3em;
+    font-size: 1.5rem;
     background: none;
+    z-index:100;
+    position: absolute;
 }
 
 .nav-menu {
     background-color: #fff;
     width: 250px;
-    height: 100vh;
+    height: 100%;
     display: flex;
     position: fixed;
-    top: 0;
     right: -100%;
     transition: 850ms;
 }
 
 .nav-menu.active {
-    width:40%;
+    width:35%;
     height: 100%;
     display: flex;
     position: fixed;
     right:0%;
+    z-index:50;
     transition: 850ms;
 }
 
@@ -42,9 +47,9 @@
     display: flex;
     font-style: italic;
     justify-content: start;
-    align-items: center ;
-    padding: 8px 0px 8px 16px;
-    height: 80px;
+    align-items: center;
+    padding: 2em 0em 0.25em 1em;
+    height: 2em;
 }
 
 .nav-text a{
