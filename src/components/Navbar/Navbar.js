@@ -8,7 +8,7 @@ import classes from './Navbar.css';
 
 
 function NavBar() {
-    const {sidebar, setSidebar} = useState(false);
+    const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
@@ -18,12 +18,12 @@ function NavBar() {
                     <img src={ logoImage } />
                 </box>
 
-                <Link to='#' className='menu-icon'>
-                    <MenuIcon onClick = {showSidebar} />
+                <Link to='#' className='menu-icon' onClick = {showSidebar}>
+                    <MenuIcon  />
                 </Link>
             </Toolbar>
             
-            <nav className='nav-menu active'>
+            <nav className={sidebar ? 'nav-menu active' : 'nav-menu' }>
                 <ul>
                     { sidebarData.map((item, index) => {
                         return (
