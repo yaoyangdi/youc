@@ -1,23 +1,26 @@
-import React, { useState } from 'react';
-import * as FaIcons from 'react-icons/fa';
+import React, { Fragment, useState } from 'react';
 
+import { AiOutlineMenu as MenuIcon} from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import { sidebarData } from './SidebarData'
 import logoImage from '../../assets/logo.png'
+import classes from './Navbar.css';
+
 
 function NavBar() {
     const {sidebar, setSidebar} = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
-        <>
-            <div classNAme='navbar'>
-                <div className='image-header'>
-                    <img src={ logoImage }/>
-                </div>
-                <Link to='#' className='menu-icon'>
-                    <FaIcons.FaBar onClick = {setSidebar} />
-                </Link>
+        <div>
+            <div classNAme= {classes.navbar}>
+                    <div className='image-header'>
+                        <img src={ logoImage }/>
+                    </div>
+
+                    <Link to='#' className='menu-icon'>
+                        <MenuIcon onClick = {setSidebar} />
+                    </Link>
             </div>
             
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -33,7 +36,7 @@ function NavBar() {
                     })}
                 </ul>
             </nav>
-        </>
+        </div>
     )
 }
 
