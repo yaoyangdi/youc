@@ -1,23 +1,24 @@
 .logo-image img {
-    height: 35%;
-    width: 35%;
-    margin-left: 10em;
-    margin-top: 3rem;
+    height: 45%;
+    width: 45%;
+    margin-left: 20%;
+    margin-top: 0.75rem;
 }
 
-.navbar {
+.navbar-container {
     background-color: #fff;
     display: flex;
-    height: 5em;
-    justify-content: start;
+    height: 9em;
+    justify-content:space-between;
     align-items: center;
 }
 
+
 .menu-icon {
     right: 10%;
-    margin-top: 9vh;
-    margin-right: 3em;
-    font-size: 1.5rem;
+    margin-top: 1em;
+    margin-right: 5%;
+    font-size: 2rem;
     background: none;
     z-index:100;
     position: absolute;
@@ -25,34 +26,43 @@
 
 .nav-menu {
     background-color: #fff;
-    width: 250px;
+    width: 35%;
     height: 100%;
     display: flex;
     position: fixed;
     right: -100%;
-    transition: 850ms;
+    z-index:99;
+    transition:  all 1s ease;
+
 }
 
 .nav-menu.active {
+    background-color: #fff;
     width:35%;
     height: 100%;
     display: flex;
     position: fixed;
     right:0%;
-    z-index:50;
-    transition: 850ms;
+    z-index:99;
+    transition:  all 1s ease;
 }
 
-.nav-text {
+.sidebar-item {
     display: flex;
     font-style: italic;
     justify-content: start;
     align-items: center;
-    padding: 2em 0em 0.25em 1em;
+    margin-top: 2vh;
+    padding: 2em 0em 0.35em 1em;
     height: 2em;
 }
 
-.nav-text a{
+.sidebar-items {
+    margin-top: 6em;
+    
+}
+
+.sidebar-item a{
     text-decoration: none;
     color: rgb(92, 90, 90);
     font-size: 28px;
@@ -61,8 +71,60 @@
     border-radius: 4px;
 }
 
-.nav-text a:hover {
+.sidebar-item a:hover {
     color: rgb(44, 63, 172);
     font-weight: 600;
+}
 
+
+@media only screen and (max-width: 1040px) {
+
+    .nav-menu {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: fixed;
+        right: -100%;
+        z-index:50;
+        transition:  all 0.7s ease;
+    }
+    
+    .nav-menu.active {
+        width:100%;
+        height: 100%;
+        display: flex;
+        position: fixed;
+        right:0%;
+        z-index:50;
+        transition:  all 0.7s ease;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .logo-image img {
+        height: 15%;
+        width: 15%;
+        margin-left: 5%;
+        margin-top: 0.5rem;
+    }
+
+    .menu-icon {
+        right: 10%;
+        margin-top: 0.5em;
+        margin-right: -5%;
+        font-size: 1rem;
+        background: none;
+        z-index:100;
+        position: absolute;
+    }
+
+    .navbar-container {
+        background-color: #fff;
+        display: flex;
+        height: 4em;
+        justify-content:space-between;
+        align-items: center;
+    }
+    
 }

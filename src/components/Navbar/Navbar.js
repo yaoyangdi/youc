@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import {Toolbar, Box } from '@material-ui/core';
 import { AiOutlineMenu as MenuIcon} from "react-icons/ai";
 import { Link } from 'react-router-dom';
@@ -9,11 +9,41 @@ import classes from './Navbar.css';
 
 function NavBar() {
     const [sidebar, setSidebar] = useState(false);
+    const [button, setButton] = useState(true);
+
+    // Event listener 1: listen on the event whether the menu button is shown or not 
+    const showButton = () => {
+        if (window.innerWidth <= 960) {
+            setButton(false);
+        } else {
+            setButton(true);
+        }
+    };
+    useEffect(() => {
+        showButton();}
+        ,[]);
+
+    // Event listener 2: listen on the event whether the menu button is clicked
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
         <Fragment>
-            <div className= 'navbar'>
+
+            <nav className={sidebar ? 'nav-menu active' : 'nav-menu' }>
+                    <ul className='sidebar-items'>
+                        { sidebarData.map((item, index) => {
+                            return (
+                                <li key={index} className={item.cName}>
+                                    <Link to={item.path}>
+                                        {item.title}
+                                    </Link>
+                                </li>
+                            )
+                        })}
+                    </ul>
+            </nav>
+
+            <div className= 'navbar-container'>
                 <Link to='/' onClick={showSidebar} className='logo-image'>
                     <img src={ logoImage }/>
                 </Link>
@@ -23,19 +53,6 @@ function NavBar() {
                 </Link>
             </div>
             
-            <nav className={sidebar ? 'nav-menu active' : 'nav-menu' }>
-                <ul>
-                    { sidebarData.map((item, index) => {
-                        return (
-                            <li key={index} className={item.cName}>
-                                <Link to={item.path}>
-                                    {item.title}
-                                </Link>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </nav>
         </Fragment>
     )
 }

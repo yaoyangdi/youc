@@ -7,10 +7,7 @@ function Home() {
         
         <div>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <header>
-                <div className='food-image'>
-                    <img src= {foodImage} />
-                </div>
+            <div className='header'>
                 <div className='head-text'>
                     <p>Youc Packaging
                         <br></br>
@@ -18,9 +15,10 @@ function Home() {
                         <br></br>
                         FOOD PACKAGING</p>
                 </div>
+                <button>Call us 03 9543 2288</button>
                 
                 
-            </header>
+            </div>
         </div>
     )
 }
