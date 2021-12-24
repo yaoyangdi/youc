@@ -6,14 +6,13 @@ function Home() {
     return (
         
         <div>
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <div className='header'>
                 <div className='head-text'>
                     <p>Youc Packaging
                         <br></br>
-                       SPECIALIZED TAKE AWAY
+                       SPECIALIZED TAKE AWAY FOOD 
                         <br></br>
-                        FOOD PACKAGING</p>
+                        PACKAGING</p>
                 </div>
                 <button>Call us 03 9543 2288</button>
                 
