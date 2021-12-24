@@ -1,0 +1,10 @@
+.main_contactus{
+    width:100%;
+    height:400px;
+    float:left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-between;
+    float:top;
+    width:"100%";
+}

@@ -3,7 +3,14 @@
     background: url(../assets/food.jpg) no-repeat ;
     height: 100%;
     width: 100%;
-}
+    float:left;
+    display: flex;              /* establish flex container */
+
+    flex-direction: column;     /* stack flex items vertically */
+    
+    justify-content: center;    /* center items vertically, in this case */
+    
+    align-items: center;        /* center items horizontally, in this case */}
 
 .head-text {
     position: inherit;
@@ -14,3 +21,29 @@
     text-align: center;
     line-height: 1.2em;
  }
+
+ .main{
+     width:100%;
+     height:400px;
+     float:left;
+     display: flex;
+     flex-wrap: wrap;
+     align-content:space-between;
+     float:top;
+     width:"100%";
+     background:#ECEAE2
+ }
+.mainpart p{
+    font-size: 22px;
+    text-align:center;
+}
+
+.mainpart h1{
+    text-align:center;
+}
+.mainpart h2{
+    text-align:center;
+}
+.mainpart{
+    padding:10px;
+}

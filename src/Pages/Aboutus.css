@@ -1,0 +1,52 @@
+
+.topdiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-between;
+    float:top;
+    width:"100%";
+    background:#ECEAE2
+}
+
+.topdiv p{
+font-size: 22px;
+text-align:center;
+}
+
+.servicearea p{
+    font-size: 20px;
+    text-align:left;
+    }
+
+.topdiv h1{
+    text-align:center;
+    }
+.servicearea h1{
+    text-align:left;
+    }
+.toppart{
+    min-width: 1600px;
+    
+}
+
+.picturepart{
+    position: relative;
+    background: url(../assets/food.jpg) no-repeat ;
+    height: 300px;
+    width: 100%;
+    float:left;
+}
+
+.head-text {
+    position: inherit;
+    color: #fff;
+    font-weight: 800;
+    top: 0.2em;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2em;
+ }
+ .servicearea{
+    background:#ffffff
+
+ }

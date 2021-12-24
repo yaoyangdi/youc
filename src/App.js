@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Aboutus from './Pages/Aboutus';
 import Contactus from './Pages/Contactus';
 import Footer from './components/Footer/Footer';
+import Payterm from './Pages/PaymentTerm';
 
 import './App.css';
 
@@ -16,8 +17,9 @@ function App() {
               <Route path='/' element={<Home />} />
               <Route path='/aboutus' element = {<Aboutus/>} />
               <Route path='/contact-us' element = {<Contactus />} />
+              <Route path='/paymentterm' element = {<Payterm />} />
+
           </Routes>
-          <Footer />
     </Router>
     </>
   );
