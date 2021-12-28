@@ -1,5 +1,4 @@
 import React from 'react';
-import foodImage from '../assets/food.jpg';
 import { Box}  from '@material-ui/core';
 import classes from './Home.css'
 import Button from '@mui/material/Button';
@@ -27,71 +26,79 @@ const theme = createTheme({
       },
   
       secondary: {
-        // This is green.A700 as hex.
         main: '#f4caab',
+        contrastText: '#fff',
       },
     },
+    typography: {
+      fontSize: '25',
+
+      }
   });
 function Home() {
     return (
         
         <div>
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <div className='header'>
-                <div className='head-text'>
-                    <p>Youc Packaging
-                        <br></br>
-                       SPECIALIZED TAKE AWAY
-                        <br></br>
-                        FOOD PACKAGING</p>
+
+                <div className='header1'>
+                  <div className='head-text1'>
+                      <p>Youc Packaging
+                          <br></br>
+                        SPECIALIZED TAKE AWAY FOOD
+                          <br></br>
+                          PACKAGING</p>
+                  </div>
+                  <ThemeProvider theme={theme}>
+                    <Button variant="contained" color="secondary" className='btn--1' >Call us 03 9543 2288</Button>
+                  </ThemeProvider>
                 </div>
-                <Button variant="contained">Call us 03 9543 2288</Button>
-                
-                
-            </div>
 
 
 
-            <div className='main'>
-                <div  className="mainpart" style={{ml:"5px",float:"left",width:"400px",backgroundColor:"#ECEAE2"}}>
-                    <h1>Our Mission</h1>
-                    <ForumIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
-                    <p>In our mission to provide 100% customer satisfaction, we have a goal to minimize the mistakes and increase the speed of our processing by the advantage of our online order system speaking everyone's language throughout the whole supply chain and to customers.</p>
-                </div>
-                <div className="mainpart" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
-                    <h2>Customer-customized products and branding</h2>
-                    <CasinoIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
+                <div className='main'>
+                      <div  className="mainpart" style={{ml:"5px",width:"400px",backgroundColor:"#ECEAE2"}}>
+                          <h1>Our Mission</h1>
+                          <ForumIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
+                          <p>In our mission to provide 100% customer satisfaction, we have a goal to minimize the mistakes and increase the speed of our processing by the advantage of our online order system speaking everyone's language throughout the whole supply chain and to customers.</p>
+                      </div>
 
-                    <p>Customers can ask us to get a product made to their specifications, with the size and brand they want, and we will source manufacturers to make it for them.</p>
-                </div>
-                <div className="mainpart" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
-                    <h1>Our unique online order</h1>
-                    <BuildIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
+                      <div className="mainpart" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
+                          <h2>Customer-customized products and branding</h2>
+                          <CasinoIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
-                    <p>Welcome to our unique online order system which speaks everyone's language; in which each customer can call each product whatever they want.</p>
-                </div>
-                <div className="mainpart" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
-                    <h1>After Sales</h1>
-                    <PeopleIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
+                          <p>Customers can ask us to get a product made to their specifications, with the size and brand they want, and we will source manufacturers to make it for them.</p>
+                      </div>
+                                        
+ 
+                      <div className="mainpart" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
+                          <h1>Our unique online order</h1>
+                          <BuildIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
-                    <p>We never stop looking after our customers, we’re always on hand to replace or fix any problem quickly and efficiently.</p>
-                </div>
-                <div className='header'>
-                <div className='head-text'>
-                    <h1>Contact Us</h1>
-                    <h3>MAKE AN ENQUIRY TO FIND OUT MORE OR CALL US TODAY ON 03 9543 2288</h3>
-                    <ThemeProvider theme={theme}>
-                    <Button href="/contact-us" variant="contained" color="secondary">Make an Enquiry</Button>
-                    </ThemeProvider>
-                </div>
-                
-                
-                </div>
-                <Footer/>
+                          <p>Welcome to our unique online order system which speaks everyone's language; in which each customer can call each product whatever they want.</p>
+                      </div>
 
-            </div>
+                      <div className="mainpart" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
+                          <h1>After Sales</h1>
+                          <PeopleIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
+
+                          <p>We never stop looking after our customers, we’re always on hand to replace or fix any problem quickly and efficiently.</p>
+                      </div>
+                  </div>
+
+                  <div className='header2'>
+                      <div className='head-text2'>
+                          <h1>Contact Us</h1>
+                          <p>MAKE AN ENQUIRY TO FIND OUT MORE OR CALL US TODAY ON 03 9543 2288</p>
+                          <ThemeProvider theme={theme}>
+                            <Button href="/contact-us" variant="contained" color="secondary" className="btn--2">Make an Enquiry</Button>
+                          </ThemeProvider>
+                      </div>
+                  </div>
 
 
+                  <Box sx={{width:"100%"}}>
+                    <Footer />
+                  </Box>
         </div>
     )
 }

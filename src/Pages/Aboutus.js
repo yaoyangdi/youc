@@ -10,6 +10,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from '@mui/material/styles';
 import Footer from '../components/Footer/Footer';
 
+
+
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 const theme = createTheme({
     status: {
@@ -192,9 +194,8 @@ function Aboutus() {
 
 
             </div>
+
             <Footer/>
-
-
         </div>
     )
 }

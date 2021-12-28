@@ -6,12 +6,12 @@ export const sidebarData = [
     }, 
     {
         title: 'My Account - Online Order',
-        path: '/',
+        path: '/order',
         cName: 'sidebar-item'
     },
     {
         title: 'Product - Online',
-        path: '/',
+        path: '/online',
         cName: 'sidebar-item'
     },
     {

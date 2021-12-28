@@ -1,34 +1,87 @@
-.header{
+.header1{
     position: relative;
-    background: url(../assets/food.jpg) no-repeat ;
-    height: 100%;
+    background: url(../assets/img1.jpg) no-repeat center  ;
+    background-size: cover;
+    height: 30em;
     width: 100%;
-    float:left;
+
+
     display: flex;              /* establish flex container */
 
     flex-direction: column;     /* stack flex items vertically */
     
     justify-content: center;    /* center items vertically, in this case */
     
-    align-items: center;        /* center items horizontally, in this case */}
+    align-items: center;        /* center items horizontally, in this case */
+}
 
-.head-text {
-    position: inherit;
+
+.head-text1 p{
+    position:inherit;
     color: #fff;
-    font-weight: 800;
-    top: 0.2em;
-    font-size: 2rem;
+    font-weight: 750;
+    top: -0.7em ;
+    font-size: 4rem;
     text-align: center;
-    line-height: 1.2em;
+    line-height: 1em;
+    align-items: center;
+ }
+
+
+.header2{
+    position: relative;
+    background: url(../assets/img2.jpeg) no-repeat center  ;
+    background-size: cover;
+    height: 18em;
+    width: 100%;
+
+    display: flex;              /* establish flex container */
+
+    flex-direction: column;     /* stack flex items vertically */
+    
+    justify-items: center;
+    
+    justify-content: center;    /* center items vertically, in this case */
+    
+    align-items: center;        /* center items horizontally, in this case */
+}
+
+
+ .head-text2 h1{
+    position:inherit;
+    color: #fff;
+    font-weight: 400;
+
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1em;
+    align-items: center;
+ }
+
+ .head-text2 p{ 
+    position:inherit;
+    text-align: center;
+    color: #fff;
+    top: -3em ;
+    font-size: 1.5rem;
+ }
+
+ .btn--1 {
+     top: -2em;
+ }
+
+ .btn--2 {
+     left: 10em;
  }
 
  .main{
-     width:100%;
+     width: 100%;
      height:400px;
-     float:left;
+
      display: flex;
      flex-wrap: wrap;
      align-content:space-between;
+     justify-content: center;
      float:top;
      width:"100%";
      background:#ECEAE2
@@ -46,4 +99,23 @@
 }
 .mainpart{
     padding:10px;
+    justify-content: center;
+}
+
+.main-wrapper {
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .head-text p{
+        position:inherit;
+        color: #fff;
+        font-weight: 750;
+        top: -0.7em ;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1em;
+        align-items: center;
+     }
 }

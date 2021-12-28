@@ -8,3 +8,22 @@
     float:top;
     width:"100%";
 }
+
+.textItemsss {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1160px) {
+    .textItemsss {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+}
