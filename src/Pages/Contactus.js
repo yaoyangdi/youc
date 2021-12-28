@@ -118,6 +118,7 @@ export default function Contactus() {
 
                             <textarea name="message" rows="5" cols="50" placeholder="Message" style={{width:'90%', fontSize:'25px',width:"90%",border:'1px solid #BBB3B9'}}></textarea>
                           </form>
+                          <br></br>
                           <Button color="secondary" variant="contained" size='large'>Submit</Button>
                           </ThemeProvider>
                       </Box>
