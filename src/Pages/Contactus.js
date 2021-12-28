@@ -76,23 +76,26 @@ export default function Contactus() {
                       <Box className='textItem1'>
                           <ThemeProvider theme={theme}>
                               <h1>Our Showroom</h1>
-                              <p color='#f4caab'> Book a FREE consultation and discover how we can help you.</p>
-
-                              <p style={{fontSize:'22px', color:'#222021'}}><FiberManualRecordIcon style={{width:'50px',height:'25px',color:"#f4caab"}}/>Design to suit your situation</p>
-                              <p style={{fontSize:'22px',color:'#222021'}}><FiberManualRecordIcon style={{width:'50px',height:'25px',color:"#f4caab"}}/>Full range of options across different manufacturers</p>
-                              <p style={{fontSize:'22px',color:'#222021'}}><FiberManualRecordIcon style={{width:'50px',height:'25px',color:"#f4caab"}}/>Extensive range to meet individual budgets</p>
-
+                                <p color='#f4caab'> Book a FREE consultation and discover how we can help you.</p>
+                              <div className='contact-text'>
+                                <p><FiberManualRecordIcon style={{width:'45px',height:'25px',color:"#f4caab"}}/>Design to suit your situation</p>
+                                <p><FiberManualRecordIcon style={{width:'45px',height:'25px',color:"#f4caab"}}/>Full range of options across different manufacturers</p>
+                                <p><FiberManualRecordIcon style={{width:'45px',height:'25px',color:"#f4caab"}}/>Extensive range to meet individual budgets</p>
+                              </div>
 
 
                               <h2 style={{color:"#f4caab"}}>Contact us</h2>
-                              <p style={{fontSize:'22px', color:'#222021'}}>03 9543 2228</p>
-                              <p style={{fontSize:'22px', color:'#222021'}}>info@youc.com.au</p>
-                              <p style={{fontSize:'22px', color:'#222021'}}>Monday-Friday:  9am-2pm</p>
+                              <div className='contact-text'>
+                                <p>03 9543 2228</p>
+                                <p>info@youc.com.au</p>
+                                <p>Monday-Friday:  9am-2pm</p>
+                              </div>
 
                               <h2 style={{color:"#f4caab"}}>Address</h2>
-                              <p style={{fontSize:'22px', color:'#222021'}}>43 Nicholaas Drive</p>
-
-                              <p style={{fontSize:'22px', color:'#222021'}}>monday-friday 9am-2pm</p>
+                              <div className='contact-text'>
+                                <p>43 Nicholaas Drive</p>
+                                <p>monday-friday 9am-2pm</p>
+                              </div>
 
                           </ThemeProvider>
                       </Box>

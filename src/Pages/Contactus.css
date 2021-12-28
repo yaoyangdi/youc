@@ -7,14 +7,21 @@
 
 .textItemsss {
     display: flex;
-    width: 100%;
+    width: 80%;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
 
+.contact-text p{
+    color:rgb(66, 64, 64);
+    line-height: 1em;
+
+}
+
+
 .textItem1 {
-    padding-right: 20em;
+    padding-right: 15em;
 }
 
 .textItem2 {
