@@ -83,14 +83,15 @@ export default function Contactus() {
                                 <p><FiberManualRecordIcon style={{width:'45px',height:'25px',color:"#f4caab"}}/>Extensive range to meet individual budgets</p>
                               </div>
 
-
+                              <br></br>
                               <h2 style={{color:"#f4caab"}}>Contact us</h2>
                               <div className='contact-text'>
                                 <p>03 9543 2228</p>
                                 <p>info@youc.com.au</p>
                                 <p>Monday-Friday:  9am-2pm</p>
                               </div>
-
+                              
+                              <br></br>
                               <h2 style={{color:"#f4caab"}}>Address</h2>
                               <div className='contact-text'>
                                 <p>43 Nicholaas Drive</p>
