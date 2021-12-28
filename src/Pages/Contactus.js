@@ -69,7 +69,7 @@ export default function Contactus() {
                 </div>
 
                 <div className='textItemsss'>
-                      <Box sx={{paddingRight:"15em"}}>
+                      <Box className='textItem1'>
                           <ThemeProvider theme={theme}>
                           <h1>Our Showroom</h1>
                           <p color='#f4caab'> Book a FREE consultation and discover how we can help you.</p>
@@ -93,7 +93,7 @@ export default function Contactus() {
                           </ThemeProvider>
                       </Box>
 
-                      <Box  >
+                      <Box className='textItem2'>
                           <ThemeProvider theme={theme}>
                           <h1>Contact Us</h1>
                           <form action="" method="get" >

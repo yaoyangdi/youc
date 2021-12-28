@@ -2,7 +2,7 @@
 .topdiv {
     display: flex;
     flex-wrap: wrap;
-    align-content:space-between;
+    align-content:center;
     float:top;
     width:"100%";
     background:#ECEAE2
@@ -11,6 +11,10 @@
 .topdiv p{
 font-size: 22px;
 text-align:center;
+}
+
+.topparts{
+    padding-right: 3em;
 }
 
 .servicearea p{
@@ -24,29 +28,52 @@ text-align:center;
 .servicearea h1{
     text-align:left;
     }
-.toppart{
-    min-width: 1600px;
-    
-}
+
 
 .picturepart{
     position: relative;
-    background: url(../assets/img1.jpg) no-repeat ;
+    background: url(../assets/img3.jpeg) no-repeat center ;
+    background-size: cover;
     height: 300px;
     width: 100%;
     float:left;
 }
 
-.head-text {
+.picturepart p{
     position: inherit;
     color: #fff;
-    font-weight: 800;
-    top: 0.2em;
-    font-size: 2rem;
+    font-weight: 700;
+    top: 0.5em;
+    font-size: 3em;
     text-align: center;
-    line-height: 1.2em;
+    line-height: 1em;
  }
- .servicearea{
-    background:#ffffff
+
+ .textarea {
+     width: 70%;
+ }
+
+ .textarea p{
+    color: rgb(69, 68, 68);
+    font-size: 18px;
+
+ }
+
+
+ @media only screen and (max-width: 960px) {
+
+.picturepart p{
+    position: inherit;
+    color: #fff;
+    font-weight: 700;
+    top: 0.5em;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1em;
+ }
+
+ .topparts{
+    padding-right: 0em;
+}
 
  }

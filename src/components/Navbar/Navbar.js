@@ -11,7 +11,7 @@ function NavBar() {
     const [sidebar, setSidebar] = useState(false);
     const [button, setButton] = useState(true);
 
-    // Event listener 1: listen on the event whether the menu button is shown or not 
+    // Event listener 1: listen on the event whether the menu button is shown or not => button disappear or shown
     const showButton = () => {
         if (window.innerWidth <= 960) {
             setButton(false);
@@ -23,8 +23,13 @@ function NavBar() {
         showButton();}
         ,[]);
 
-    // Event listener 2: listen on the event whether the menu button is clicked
+    // Event listener 2: listen on the event whether the menu button is clicked => open / close the sidebar
     const showSidebar = () => setSidebar(!sidebar);
+
+    // Event listener 3: listen on the whichever nav item is clicked => close the sidebar
+    const navItemClicked = () => setSidebar(false);
+
+  
 
     return (
         <Fragment>
@@ -34,7 +39,10 @@ function NavBar() {
                         { sidebarData.map((item, index) => {
                             return (
                                 <li key={index} className={item.cName}>
-                                    <Link to={item.path}>
+                                    <Link 
+                                    to={item.path}
+                                    onClick={navItemClicked}
+                                    target={(item.path==='/order' || item.path ==='/online') ? '_blank' : '_self'}> 
                                         {item.title}
                                     </Link>
                                 </li>

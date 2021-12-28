@@ -60,38 +60,35 @@ function Aboutus() {
                     <HowToRegIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
                     <p>Our Custom Made Products are made to meet the requirements of each Individual Customer</p>
-                </div>
+                </div>                
+            </div>
+
 
                 <div className='picturepart'>
-                <div className='head-text'>
-                        <h3>Over a thousand products  </h3>
-                        <h3>available in our online store to </h3>
-                        <h5>suit your need</h5>
-
-                    
-                </div>
+                    <p>Over a thousand products  <br></br>
+                       available in our online store to <br></br>
+                       suit your need</p>
                 </div>
                 <ThemeProvider theme={theme}>
-                <div className='servicearea'>
+                <div className='textarea'>
                     <h2><FiberManualRecordIcon style={{width:'50px',height:'25px',color:"#f4caab"}}/>Our Service Area</h2>
+
                     <p>- Inner City municipalities: City of Melbourne, Port Phillip, Yarra.</p>
                     <p>- Northern municipalities: City of Banyule, Darebin, Hume, Moonee Valley, Moreland, Shine of Nillumbik, Whittlesea.</p>
                     <p>- Eastern municipalities: Boroondara, Knox, Manningham, Maroondah, Whitehorse, Shire of Yarra Ranges.</p>
                     <p> - Southeastern municipalities: City of Bayside, Shire of Cardinia, Casey, Greater Dandenong, Franston, Glen Eira, Kingston, Monash, Shire of Mornington Peninsula, Stonning.</p>
                     <p>- Western municipalities: City of Brimbank, Hobsons Bay, Maribyrnong, Melton, Wyndlam.</p>
+                    <br></br>
 
 
-                    <h2>
-                        <FiberManualRecordIcon style={{width:'50px',height:'25px',color:"#f4caab"}}/>Return Policy
-                    </h2>
+                    <h2><FiberManualRecordIcon style={{width:'50px',height:'25px',color:"#f4caab"}}/>Return Policy</h2>
 
                     <p>
                     We want all our customers to be happy with their products from Youc. We offer a 31 Day Satisfaction Guarantee for all products purchased through us. If for any reason you are unable to use the product you have purchased, simply return it to us within 31 Days for a refund of the purchase price, less any delivery fees. We are unable to accept returns of any products after 31 days or if you have over ordered or simply no longer want them.
                     </p> 
                     <p>
-                    Unfortunately we are unable to return any Buy to Demand or custom products, so please ensure you are entirely happy with the proofs and quotes before you sign and send them back to us.
-
-                    </p>
+                    Unfortunately we are unable to return any Buy to Demand or custom products, so please ensure you are entirely happy with the proofs and quotes before you sign and send them back to us.</p>
+                    <br></br>
 
                     <h1>Our Product Range</h1>
                     <h3>Plastic Series</h3>
@@ -186,14 +183,12 @@ function Aboutus() {
                     </p>               
 
 
-                </div>
+              </div>
 
 
 
                </ThemeProvider>
 
-
-            </div>
 
             <Footer/>
         </div>

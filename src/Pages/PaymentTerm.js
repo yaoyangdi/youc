@@ -1,8 +1,5 @@
 import React, { Fragment, useState } from 'react';
 
-import { AiOutlineMenu as MenuIcon} from "react-icons/ai";
-import { Link } from 'react-router-dom';
-import logoImage from '../assets/logo.png'
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -13,9 +10,11 @@ import CardMedia from '@mui/material/CardMedia';
 import "./paymentterm.css";
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/material/styles';
-import { CLink } from '@coreui/react';
+
 import './Footer.css';
 import Footer from '../components/Footer/Footer';
+
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 const theme = createTheme({
   status: {
@@ -27,15 +26,18 @@ const theme = createTheme({
       darker: '#053e85',
     },
     neutral: {
-      main: '#f07c28',
+      main: 'rgb(236, 178, 16)',
       contrastText: '#fff',
     },
 
     secondary: {
-      // This is green.A700 as hex.
-      main: '#f4caab',
+      main: '#f4baaa',
+      contrastText: '#fff',
     },
   },
+  typography: {
+    fontSize: '20',
+    }
 });
 
 function Payterm() {
@@ -43,57 +45,57 @@ function Payterm() {
     return (
         <div class="main-wrapper">
             <Box sx={{width:'100%'}}>
-            <p><h1>Cash Flow Solutions</h1></p>
+              <p><h1>Cash Flow Solutions</h1></p>
             </Box>
+
             <Box sx={{width:'100%'}}>
-
-            <p>We know how important cash flow is for small businesses, so we are willing to discuss your need. We support our customers with the following two payments terms:</p>          
+              <p>We know how important cash flow is for small businesses, so we are willing to discuss your need. We support our customers with the following two payments terms:</p>          
             </Box>
-            <div class="content">
-            <Card sx={{ maxWidth:'500px',float:"left",ml:"30px"}}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="300px"
-        image={require('./shiftpayments_-800-x500.jpg')} 
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        14 days term application
-        </Typography>
-      </CardContent>
-      <CardActions>
-      <ThemeProvider theme={theme}>
-  <Button color="neutral" variant="contained">
-    Applicant
-  </Button>
-</ThemeProvider>
+            
+            <div className="content">
+              <Card>
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="300px"
+                  image={require('./shiftpayments_-800-x500.jpg')} 
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h4" component="div">
+                  14 days term application
+                  </Typography>
+                </CardContent>
 
+                <CardActions>
+                  <ThemeProvider theme={theme}>
+                    <Button startIcon={<ShoppingBagIcon />} color="neutral" variant="contained">
+                      Applicantion
+                    </Button>
+                  </ThemeProvider>
+                </CardActions>
+              </Card>
 
-      </CardActions>
-    </Card>
-    <Card sx={{ maxWidth: '500px',float:"left",ml:"30px"}} float="left" >
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="300px"
-        image={require('./longtermapplication.jpeg')} 
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Longer term application
+              <Card >
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="300px"
+                  image={require('./longtermapplication.jpeg')} />
 
-        </Typography>
-      </CardContent>
-      <CardActions>
-      <ThemeProvider theme={theme}>
-  <Button color="neutral" variant="contained">
-    Applicant
-  </Button>
-</ThemeProvider>
+                <CardContent>
+                  <Typography gutterBottom variant="h4" component="div">
+                  Longer term application
+                  </Typography>
+                </CardContent>
 
-      </CardActions>
-    </Card>
+                <CardActions>
+                  <ThemeProvider theme={theme}>
+                    <Button startIcon={<ShoppingBagIcon />} color="neutral" variant="contained">
+                      Applicantion
+                    </Button>
+                  </ThemeProvider>
+                </CardActions>
+              </Card>
 
     
     </div>

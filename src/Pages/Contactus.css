@@ -1,29 +1,47 @@
-.main_contactus{
+.main{
     width:100%;
-    height:400px;
-    float:left;
     display: flex;
     flex-wrap: wrap;
     align-content:space-between;
-    float:top;
-    width:"100%";
 }
 
 .textItemsss {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    align-items: baseline;
     justify-content: center;
 }
 
+.textItem1 {
+    padding-right: 20em;
+}
 
-@media only screen and (max-width: 1160px) {
+.textItem2 {
+}
+
+
+@media only screen and (max-width: 1260px) {
+
+    .textItem1 {
+        width: 100%;
+        padding-left: 20em;
+
+    }
+    
+    .textItem2 {
+        width: 100%;
+        padding-left: 20em;
+    }
+    
+
+
+    
     .textItemsss {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: flex-start;
+        flex-flow: column;
+        justify-content: center;
+
     }
 }
