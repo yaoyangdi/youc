@@ -58,7 +58,7 @@ function Payterm() {
                   component="img"
                   alt="green iguana"
                   height="300px"
-                  image={require('./shiftpayments_-800-x500.jpg')} 
+                  image={require('../assets/img4.jpg')} 
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h4" component="div">
@@ -80,7 +80,7 @@ function Payterm() {
                   component="img"
                   alt="green iguana"
                   height="300px"
-                  image={require('./longtermapplication.jpeg')} />
+                  image={require('../assets/img5.jpeg')} />
 
                 <CardContent>
                   <Typography gutterBottom variant="h4" component="div">
