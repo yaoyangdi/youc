@@ -43,11 +43,11 @@
 @media only screen and (max-width: 960px) {
 .btn--md {
     padding: 8px 20px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .btn--lg {
     padding: 10px 26px;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 }

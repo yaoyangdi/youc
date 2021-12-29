@@ -31,31 +31,30 @@ function Home() {
 
 
                 <div className='main'>
-                    <div  className="mainpart" style={{width:"350px"}}>
+                    <div  className="mainpart">
+                        <ForumIcon style={{width:"60px",height:"60px",marginLeft:"40%"}}/>
                         <h1>Our Mission</h1>
-                        <ForumIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
                         <p>In our mission to provide 100% customer satisfaction, we have a goal to minimize the mistakes and increase the speed of our processing by the advantage of our online order system speaking everyone's language throughout the whole supply chain and to customers.</p>
                     </div>
 
-                    <div className="mainpart" style={{width:"350px"}}>
-                        <h2>Customer-customized products and branding</h2>
-                        <CasinoIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
+                    <div className="mainpart" >
+                        <CasinoIcon style={{width:"60px",height:"60px",marginLeft:"40%"}}/>
+                        <h1>Customer-customized products and branding</h1>
 
                         <p>Customers can ask us to get a product made to their specifications, with the size and brand they want, and we will source manufacturers to make it for them.</p>
                     </div>
                                       
 
-                    <div className="mainpart" style={{width:"350px"}}>
+                    <div className="mainpart">
+                        <BuildIcon style={{width:"60px",height:"60px",marginLeft:"40%"}}/>
                         <h1>Our unique online order</h1>
-                        <BuildIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
                         <p>Welcome to our unique online order system which speaks everyone's language; in which each customer can call each product whatever they want.</p>
                     </div>
 
-                    <div className="mainpart" style={{width:"350px"}}>
+                    <div className="mainpart">
+                        <PeopleIcon style={{width:"60px",height:"60px",marginLeft:"40%"}} />
                         <h1>After Sales</h1>
-                        <PeopleIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
-
                         <p>We never stop looking after our customers, we’re always on hand to replace or fix any problem quickly and efficiently.</p>
                     </div>
                 </div>

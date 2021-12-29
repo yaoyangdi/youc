@@ -17,7 +17,7 @@
 .head-text1 p{
     position: inherit;
     color: #fff;
-    font-weight: 750;
+    font-weight: 700;
     margin-top: 0em ;
     margin-bottom: 0.5em;
     font-size: 4rem;
@@ -60,51 +60,62 @@
 
  }
 
- .btn--1 {
-     top: -10em;
- }
-
- .btn--2 {
-     left: 10em;
- }
 
  .main{
      width: 100%;
-
-     display: flex;
-     flex-wrap: wrap;
+     flex-wrap:nowrap;
      align-content:space-between;
      justify-content: center;
      float:top;
-     width:"100%";
      background:#ECEAE2
  }
+ 
 .mainpart p{
-    font-size: 22px;
     text-align:center;
+    font-size: 1.1em;
 }
 
 .mainpart h1{
     text-align:center;
+    line-height: 1em;
+    font-size: 1.7em;
 }
-.mainpart h2{
-    text-align:center;
-}
+
 .mainpart{
-    padding:10px;
-    justify-content: center;
-
+    width:320px;
+    padding:15px;
     background-color:"#ECEAE2";
-
-
-}
-
-.main-wrapper {
-    justify-content: center;
+    justify-items: center;
 }
 
 
-@media only screen and (max-width: 960px) {
+
+
+
+@media only screen and (max-width: 1040px) {
+    
+    .main{
+        width: 100%;
+
+        display: flex;
+        flex-wrap:wrap;
+        align-content:space-between;
+        justify-content: center;
+        float:top;
+        background:#ECEAE2
+    }
+
+    .mainpart p{
+        text-align:center;
+        font-size: 1em;
+    }
+    
+    .mainpart h1{
+        text-align:center;
+        line-height: 1em;
+        font-size: 1.3em;
+    }    
+
     .header1{
         position: relative;
         background: url(../assets/img1.jpg) no-repeat center ;
@@ -136,7 +147,7 @@
         position: inherit;
         width: 95%;
         color: #fff;
-        font-weight: 800;
+        font-weight: bolder;
         font-size: 2em;
         top: -5%;
         text-align: center;
