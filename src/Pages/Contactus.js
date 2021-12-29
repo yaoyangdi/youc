@@ -58,7 +58,7 @@ export default function Contactus() {
 
             <div className="main">
 
-                <div style={{width:'100%',}}>
+                <div style={{width:'100%'}}>
                     <LoadScript 
                         googleMapsApiKey="AIzaSyAoJxtfyCL9v5Xc-wpKUbYbuArrvJViTEc">
                             <GoogleMap

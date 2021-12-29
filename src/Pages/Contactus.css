@@ -2,16 +2,14 @@
     width:100%;
     display: flex;
     flex-wrap: wrap;
-    align-content:space-between;
-    padding: 5em;
 }
 
 .textItemsss {
     display: flex;
-    width: 80%;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content:space-between;
 }
 
 .shownroom-text p{
