@@ -74,6 +74,7 @@
 .sidebar-item a:hover {
     color: rgb(44, 63, 172);
     font-weight: 600;
+    transition: 0.3s;
 }
 
 
@@ -87,6 +88,7 @@
         position: fixed;
         right: -100%;
         z-index:50;
+        opacity: 1;
         transition:  all 0.7s ease;
     }
     
@@ -112,8 +114,8 @@
     .menu-icon {
         right: 10%;
         margin-top: 0.5em;
-        margin-right: -5%;
-        font-size: 1rem;
+        margin-right: 0%;
+        font-size: 1.6rem;
         background: none;
         z-index:100;
         position: absolute;

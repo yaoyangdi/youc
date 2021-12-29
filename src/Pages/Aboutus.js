@@ -38,24 +38,24 @@ function Aboutus() {
         <div className='main'>
             <div className='topdiv'>
                 
-                <div  className="topparts" style={{ml:"5px",float:"left",width:"400px",backgroundColor:"#ECEAE2"}}>
+                <div  className="topparts" style={{ml:"5px",float:"left",width:"350px",backgroundColor:"#ECEAE2"}}>
                     <h1>Free Delivery</h1>
                     <FlashOnSharpIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
                     <p>Orders over $150 (inc GST) delivered free to metro areas**</p>
                 </div>
-                <div className="topparts" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
+                <div className="topparts" style={{float:"left",backgroundColor:"#ECEAE2",width:"350px"}}>
                     <h1>Customer' Satisfaction</h1>
                     <BrightnessHighOutlinedIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
                     <p>Our clients are our biggest asset. And customer loyalty is our ultimate goal. That's why customer service isn't just a department of YOUC, it is the cornerstone of our entire company.</p>
                 </div>
-                <div className="topparts" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
+                <div className="topparts" style={{float:"left",backgroundColor:"#ECEAE2",width:"350px"}}>
                     <h1>Technology</h1>
                     <LibraryBooksIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
                     <p>Our software informs us of how we can build and improve our software to better meet the needs of our customers with each new update, and also tells us which things are already working well.</p>
                 </div>
-                <div className="topparts" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
+                <div className="topparts" style={{float:"left",backgroundColor:"#ECEAE2",width:"350px"}}>
                     <h1>Customer Product</h1>
                     <HowToRegIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 

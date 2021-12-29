@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f2b2db3.css",
-    "main.js": "/static/js/main.7e467a0d.js",
-    "static/media/longtermapplication.jpeg": "/static/media/longtermapplication.7a1fe670c8da68f98e5b.jpeg",
-    "static/media/food.jpg": "/static/media/food.1336d4e81f276cdee3fb.jpg",
-    "static/media/shiftpayments_-800-x500.jpg": "/static/media/shiftpayments_-800-x500.f10465275eefb8ee08d0.jpg",
+    "main.css": "/static/css/main.79a08956.css",
+    "main.js": "/static/js/main.ed7108fd.js",
+    "static/media/img2.jpeg": "/static/media/img2.52176c059f2db3d198d4.jpeg",
+    "static/media/img5.jpeg": "/static/media/img5.7a1fe670c8da68f98e5b.jpeg",
+    "static/media/img1.jpg": "/static/media/img1.1336d4e81f276cdee3fb.jpg",
+    "static/media/img3.jpeg": "/static/media/img3.9c474b35b6a53ceb1648.jpeg",
+    "static/media/img4.jpg": "/static/media/img4.f10465275eefb8ee08d0.jpg",
     "index.html": "/index.html",
-    "main.3f2b2db3.css.map": "/static/css/main.3f2b2db3.css.map",
-    "main.7e467a0d.js.map": "/static/js/main.7e467a0d.js.map"
+    "main.79a08956.css.map": "/static/css/main.79a08956.css.map",
+    "main.ed7108fd.js.map": "/static/js/main.ed7108fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f2b2db3.css",
-    "static/js/main.7e467a0d.js"
+    "static/css/main.79a08956.css",
+    "static/js/main.ed7108fd.js"
   ]
 }

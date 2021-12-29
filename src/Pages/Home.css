@@ -2,29 +2,28 @@
     position: relative;
     background: url(../assets/img1.jpg) no-repeat center  ;
     background-size: cover;
-    height: 30em;
+    height: 25em;
     width: 100%;
-
 
     display: flex;              /* establish flex container */
 
     flex-direction: column;     /* stack flex items vertically */
     
     justify-content: center;    /* center items vertically, in this case */
-    
     align-items: center;        /* center items horizontally, in this case */
 }
 
 
 .head-text1 p{
-    position:inherit;
+    position: inherit;
     color: #fff;
     font-weight: 750;
-    top: -0.7em ;
+    margin-top: 0em ;
+    margin-bottom: 0.5em;
     font-size: 4rem;
     text-align: center;
     line-height: 1em;
-    align-items: center;
+    font-family: 'Poppins';
  }
 
 
@@ -32,17 +31,14 @@
     position: relative;
     background: url(../assets/img2.jpeg) no-repeat center  ;
     background-size: cover;
-    height: 18em;
+    height: 14em;
     width: 100%;
 
     display: flex;              /* establish flex container */
 
     flex-direction: column;     /* stack flex items vertically */
     
-    justify-items: center;
-    
     justify-content: center;    /* center items vertically, in this case */
-    
     align-items: center;        /* center items horizontally, in this case */
 }
 
@@ -50,24 +46,22 @@
  .head-text2 h1{
     position:inherit;
     color: #fff;
-    font-weight: 400;
-
-    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 0em;
+    margin-bottom: 0.3em;
+    font-size: 3.5rem;
     text-align: center;
-    line-height: 1em;
-    align-items: center;
  }
 
  .head-text2 p{ 
-    position:inherit;
-    text-align: center;
     color: #fff;
-    top: -3em ;
-    font-size: 1.5rem;
+    margin-top: 0px;
+    font-size: 1.3rem;
+
  }
 
  .btn--1 {
-     top: -2em;
+     top: -10em;
  }
 
  .btn--2 {
@@ -111,19 +105,62 @@
 
 
 @media only screen and (max-width: 960px) {
+    .header1{
+        position: relative;
+        background: url(../assets/img1.jpg) no-repeat center ;
+        background-size: cover;
+        height: 18em;
+        width: 100%;
+    
+    
+        display: flex;              /* establish flex container */
+    
+        flex-direction: column;     /* stack flex items vertically */
+        
+        justify-content: center;    /* center items vertically, in this case */
+        align-content: center;
+        align-items: center;        /* center items horizontally, in this case */
+    }
+
+    .header2{
+        position: relative;
+        background: url(../assets/img2.jpeg) no-repeat center  ;
+        background-size: cover;
+        height: 13em;
+        width: 100%;
+    }
+    
+
+    
     .head-text1 p{
         position: inherit;
+        width: 95%;
         color: #fff;
-        font-weight: 700;
-        font-size: 2.8em;
+        font-weight: 800;
+        font-size: 2em;
+        top: -5%;
         text-align: center;
-        line-height: 1em;
-        margin-bottom: 2em;
+        padding-left: 2.5%;
+        line-height: 1.2em;
+
      }
 
-    .btn--2 {
-        bottom: 1em;
-        left: 3em;
+     
+    .head-text2 h1{
+        position:inherit;
+        color: #fff;
+        font-weight: 500;
+        margin-top: -0.5em;
+        margin-bottom: 0.3em;
+        font-size: 2.5rem;
+        text-align: center;
     }
-   
+
+    .head-text2 p{ 
+        color: #fff;
+        margin-top: 0px;
+        font-size: 1rem;
+        text-align: center;
+        text-emphasis-position: '03';
+    }
 }

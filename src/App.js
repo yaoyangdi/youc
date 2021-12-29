@@ -10,6 +10,8 @@ import Footer from './components/Footer/Footer';
 import Payterm from './Pages/PaymentTerm';
 
 import './App.css';
+import './assets/font.css'
+
 
 function App() {
   return (

@@ -50,7 +50,10 @@ function Payterm() {
 
             <Box sx={{width:'100%'}}>
               <p>We know how important cash flow is for small businesses, so we are willing to discuss your need. We support our customers with the following two payments terms:</p>          
+              <br></br>
+              <br></br>
             </Box>
+
             
             <div className="content">
               <Card>
@@ -97,12 +100,14 @@ function Payterm() {
                 </CardActions>
               </Card>
 
+              <br></br>
+              <br></br>
+
     
     </div>
     <Box sx={{width:"100%"}}>
-
-<Footer/>
-</Box>
+      <Footer/>
+    </Box>
 
 
 
