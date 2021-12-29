@@ -11,8 +11,16 @@ import { createTheme } from '@mui/material/styles';
 import Footer from '../components/Footer/Footer';
 
 
-
+import './Home.css';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
+
+import Shandian from '../assets/shandian.png';
+import Taiyang from '../assets/taiyang.png';
+import Wendang from '../assets/wendang.png';
+import Chizi from '../assets/chizi.png';
+import Duigou from '../assets/duigou.png';
+
+
 const theme = createTheme({
     status: {
       danger: '#e53e3e',
@@ -35,29 +43,33 @@ const theme = createTheme({
   });
 function Aboutus() {
     return (
-        <div className='main'>
-            <div className='topdiv'>
+        <div>
+                <div className='main' style={{width:"100%",backgroundColor:"#F5F5F5",paddingLeft:"2%",paddingRight:"2%"}}>
                 
-                <div  className="topparts" style={{ml:"5px",float:"left",width:"400px",backgroundColor:"#ECEAE2"}}>
+                <div  className="mainpart" style={{width:"400px"}}>
+                    <img style={{width:"100px",height:"100px",marginLeft:"35%"}} src={Shandian}/>
+
                     <h1>Free Delivery</h1>
-                    <FlashOnSharpIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
                     <p>Orders over $150 (inc GST) delivered free to metro areas**</p>
                 </div>
-                <div className="topparts" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
+                <div  className="mainpart" style={{width:"400px"}}>
+                  <img style={{width:"100px",height:"100px",marginLeft:"35%"}} src={Taiyang}/>
+
                     <h1>Customer' Satisfaction</h1>
-                    <BrightnessHighOutlinedIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
                     <p>Our clients are our biggest asset. And customer loyalty is our ultimate goal. That's why customer service isn't just a department of YOUC, it is the cornerstone of our entire company.</p>
                 </div>
-                <div className="topparts" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
+                <div  className="mainpart" style={{width:"400px"}}>
+                <img style={{width:"100px",height:"100px",marginLeft:"35%"}} src={Wendang}/>
+
                     <h1>Technology</h1>
-                    <LibraryBooksIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
                     <p>Our software informs us of how we can build and improve our software to better meet the needs of our customers with each new update, and also tells us which things are already working well.</p>
                 </div>
-                <div className="topparts" style={{float:"left",backgroundColor:"#ECEAE2",width:"400px"}}>
+                <div  className="mainpart" style={{width:"400px"}}>
+                <img style={{width:"100px",height:"100px",marginLeft:"35%"}} src={Chizi}/>
+
                     <h1>Customer Product</h1>
-                    <HowToRegIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
                     <p>Our Custom Made Products are made to meet the requirements of each Individual Customer</p>
                 </div>                
@@ -71,7 +83,7 @@ function Aboutus() {
                 </div>
                 <ThemeProvider theme={theme}>
                 <div className='textarea'>
-                    <h2><FiberManualRecordIcon style={{width:'50px',height:'25px',color:"#f4caab"}}/>Our Service Area</h2>
+                    <h2><img style={{width:"40px",height:"40px"}} src={Duigou}/>Our Service Area</h2>
 
                     <p>- Inner City municipalities: City of Melbourne, Port Phillip, Yarra.</p>
                     <p>- Northern municipalities: City of Banyule, Darebin, Hume, Moonee Valley, Moreland, Shine of Nillumbik, Whittlesea.</p>
@@ -81,7 +93,7 @@ function Aboutus() {
                     <br></br>
 
 
-                    <h2><FiberManualRecordIcon style={{width:'50px',height:'25px',color:"#f4caab"}}/>Return Policy</h2>
+                    <h2><img style={{width:"40px",height:"40px"}} src={Duigou}/>Return Policy</h2>
 
                     <p>
                     We want all our customers to be happy with their products from Youc. We offer a 31 Day Satisfaction Guarantee for all products purchased through us. If for any reason you are unable to use the product you have purchased, simply return it to us within 31 Days for a refund of the purchase price, less any delivery fees. We are unable to accept returns of any products after 31 days or if you have over ordered or simply no longer want them.

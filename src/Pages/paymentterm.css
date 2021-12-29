@@ -22,9 +22,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
 
-p {
-    font-size:18px;color:#2f5687
-}
 

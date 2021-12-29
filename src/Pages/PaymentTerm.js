@@ -43,21 +43,23 @@ const theme = createTheme({
 function Payterm() {
 
     return (
-        <div class="main-wrapper">
-            <Box sx={{width:'100%'}}>
+        <div className="main-wrapper">
+            <Box sx={{width:'100%',float:"left"}}>
               <p><h1>Cash Flow Solutions</h1></p>
             </Box>
 
-            <Box sx={{width:'100%'}}>
-              <p>We know how important cash flow is for small businesses, so we are willing to discuss your need. We support our customers with the following two payments terms:</p>          
+            <Box className="topp" sx={{width:'100%',float:"left"}}>
+              <p style={{fontSize:"22px",color:"#2f5687",textAlign:"left",fontFamily:"Helvetica"}}>We know how important cash flow is for small businesses, so we are willing to discuss your need.</p>          
+              <p style={{fontSize:"22px",color:"#2f5687",textAlign:"left",fontFamily:"Helvetica"}}> We support our customers with the following two payments terms:</p>
             </Box>
             
             <div className="content">
-              <Card>
+              <Card sx={{width:"600px"}}>
                 <CardMedia
                   component="img"
                   alt="green iguana"
                   height="300px"
+                  width="500px"
                   image={require('../assets/img4.jpg')} 
                 />
                 <CardContent>
@@ -68,14 +70,14 @@ function Payterm() {
 
                 <CardActions>
                   <ThemeProvider theme={theme}>
-                    <Button startIcon={<ShoppingBagIcon />} color="neutral" variant="contained">
+                    <Button startIcon={<ShoppingBagIcon />} color="secondary" variant="contained">
                       Applicantion
                     </Button>
                   </ThemeProvider>
                 </CardActions>
               </Card>
 
-              <Card >
+              <Card  sx={{width:"600px"}}>
                 <CardMedia
                   component="img"
                   alt="green iguana"
@@ -90,7 +92,7 @@ function Payterm() {
 
                 <CardActions>
                   <ThemeProvider theme={theme}>
-                    <Button startIcon={<ShoppingBagIcon />} color="neutral" variant="contained">
+                    <Button startIcon={<ShoppingBagIcon />} color="secondary" variant="contained">
                       Applicantion
                     </Button>
                   </ThemeProvider>

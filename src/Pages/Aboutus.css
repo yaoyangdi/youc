@@ -49,13 +49,37 @@ text-align:center;
     line-height: 1em;
  }
 
- .textarea {
+ .textarea{
      width: 70%;
+     font-family: Helvetica;
+     padding-left: 5%;
+ }
+ .textarea h2{
+
+    font-family: Helvetica;
+    font-size: 36px;
+
  }
 
+ .textarea h1{
+
+    font-family: Helvetica;
+    font-size: 56px;
+
+ }
+
+ 
+ .textarea h3{
+
+    font-family: Helvetica;
+    font-size: 32px;
+
+ }
  .textarea p{
-    color: rgb(69, 68, 68);
-    font-size: 18px;
+    color: #9E9E9E;
+    font-size: 22px;
+    font-family: Helvetica;
+    line-height: 40px;
 
  }
 
@@ -75,5 +99,26 @@ text-align:center;
  .topparts{
     padding-right: 0em;
 }
+.textarea h2{
+
+    font-family: Helvetica;
+    font-size: 24px;
+
+ }
+
+ .textarea h1{
+
+    font-family: Helvetica;
+    font-size: 28px;
+
+ }
+
+ .textarea h3{
+
+    font-family: Helvetica;
+    font-size: 24px;
+
+ }
+
 
  }

@@ -10,6 +10,10 @@ import PeopleIcon from '@material-ui/icons/People';
 import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from '@mui/material/styles';
 import Footer from '../components/Footer/Footer';
+import Communicate from '../assets/communicate.png';
+import Customize from '../assets/customize.png';
+import Banshou from '../assets/banshou.png';
+import People from '../assets/people.png';
 
 const theme = createTheme({
     status: {
@@ -55,31 +59,35 @@ function Home() {
 
 
 
-                <div className='main'>
-                    <div  className="mainpart" style={{width:"400px",}}>
+                <div className='main' style={{width:"100%",backgroundColor:"white",paddingLeft:"2%",paddingRight:"2%"}}>
+                    <div  className="mainpart" style={{width:"400px"}}>
+                        <img style={{width:"120px",height:"100px",marginLeft:"35%"}} src={Communicate}/>
                         <h1>Our Mission</h1>
-                        <ForumIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
+                        
                         <p>In our mission to provide 100% customer satisfaction, we have a goal to minimize the mistakes and increase the speed of our processing by the advantage of our online order system speaking everyone's language throughout the whole supply chain and to customers.</p>
                     </div>
 
                     <div className="mainpart" style={{width:"400px"}}>
+                        <img style={{width:"120px",height:"100px",marginLeft:"35%"}} src={Customize}/>
+
                         <h2>Customer-customized products and branding</h2>
-                        <CasinoIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
                         <p>Customers can ask us to get a product made to their specifications, with the size and brand they want, and we will source manufacturers to make it for them.</p>
                     </div>
                                       
 
                     <div className="mainpart" style={{width:"400px"}}>
+                      <img style={{width:"120px",height:"100px",marginLeft:"35%"}} src={Banshou}/>
+
                         <h1>Our unique online order</h1>
-                        <BuildIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
                         <p>Welcome to our unique online order system which speaks everyone's language; in which each customer can call each product whatever they want.</p>
                     </div>
 
                     <div className="mainpart" style={{width:"400px"}}>
+                      <img style={{width:"120px",height:"100px",marginLeft:"35%"}} src={People}/>
+
                         <h1>After Sales</h1>
-                        <PeopleIcon style={{width:"100px",height:"100px",marginLeft:"35%"}}/>
 
                         <p>We never stop looking after our customers, we’re always on hand to replace or fix any problem quickly and efficiently.</p>
                     </div>
