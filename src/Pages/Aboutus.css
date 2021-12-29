@@ -1,26 +1,30 @@
+.topparts{
+    margin-top: 1em;
+    padding-right: 3em;
+    width:300px;
+    background-color:"#ECEAE2";
+}
 
-.topdiv {
+.topparts h1{
+    text-align:center;
+    line-height: 1em;
+    margin-bottom: -0.2em;
+}
+
+.topparts p{
+    text-align:center;
+    font-size: 1.1em;
+}
+
+.main {
     display: flex;
-    flex-wrap: wrap;
-    align-content:center;
+    flex-wrap: nowrap;
+    align-content:space-between;
+    justify-content: center;
     float:top;
-    width:"80%";
+    width:"100%";
     background:#ECEAE2
 }
-
-.topdiv p{
-font-size: 22px;
-text-align:center;
-}
-
-.topparts{
-    padding-right: 3em;
-}
-
-.servicearea p{
-    font-size: 20px;
-    text-align:left;
-    }
 
 .topdiv h1{
     text-align:center;
@@ -37,6 +41,7 @@ text-align:center;
     height: 300px;
     width: 100%;
     float:left;
+    margin-bottom: 2em;
 }
 
 .picturepart p{
@@ -49,13 +54,17 @@ text-align:center;
     line-height: 1em;
  }
 
- .textarea {
+ .textpart {
+     padding-left: 15%;
      width: 70%;
+     justify-content: center;
+     
  }
 
- .textarea p{
+ .textpart p{
     color: rgb(69, 68, 68);
     font-size: 18px;
+    
 
  }
 
@@ -74,6 +83,17 @@ text-align:center;
 
  .topparts{
     padding-right: 0em;
+}
+
+
+.topparts h1{
+    text-align:center;
+    line-height: 1em;
+    margin-bottom: -0.2em;
+    font-size: 1.5em;
+}
+.topparts p{
+    font-size: 1em;
 }
 
  }
