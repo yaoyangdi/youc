@@ -1,7 +1,7 @@
 .topparts{
     margin-top: 1em;
     padding-right: 3em;
-    width:300px;
+    width:350px;
     background-color:"#ECEAE2";
 }
 
@@ -81,10 +81,13 @@
     line-height: 1em;
  }
 
- .topparts{
-    padding-right: 0em;
+.topparts{
+    margin-top: 1em;
+    padding-right: 3em;
+    width:300px;
+    padding-left: 10%;
+    background-color:"#ECEAE2";
 }
-
 
 .topparts h1{
     text-align:center;
@@ -93,7 +96,7 @@
     font-size: 1.5em;
 }
 .topparts p{
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
  }
