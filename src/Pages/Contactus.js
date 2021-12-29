@@ -1,6 +1,6 @@
 import React, {useRef,useState,useCallback} from 'react'
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+import Button from '../components/Button';
 import Footer from '../components/Footer/Footer';
 
 import { createTheme } from '@mui/material/styles';
@@ -8,10 +8,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import {
 	GoogleMap,
 	LoadScript,
-	useLoadScript,
 	Marker,
-	InfoWindow,
-}from "@react-google-maps/api";
+} from "@react-google-maps/api";
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 import './Contactus.css';
@@ -77,20 +75,18 @@ export default function Contactus() {
                           <ThemeProvider theme={theme}>
                               <h1>Our Showroom</h1>
                                 <p color='#f4caab'> Book a FREE consultation and discover how we can help you.</p>
-                              <div className='contact-text'>
+                              <div className='shownroom-text'>
                                 <p><FiberManualRecordIcon style={{width:'45px',height:'25px',color:"#f4caab"}}/>Design to suit your situation</p>
                                 <p><FiberManualRecordIcon style={{width:'45px',height:'25px',color:"#f4caab"}}/>Full range of options across different manufacturers</p>
                                 <p><FiberManualRecordIcon style={{width:'45px',height:'25px',color:"#f4caab"}}/>Extensive range to meet individual budgets</p>
                               </div>
-
-                              <br></br>
+                              
                               <h2 style={{color:"#f4caab"}}>Contact us</h2>
                               <div className='contact-text'>
                                 <p>03 9543 2228</p>
                                 <p>info@youc.com.au</p>
                                 <p>Monday-Friday:  9am-2pm</p>
                               </div>
-                              
                               <br></br>
                               <h2 style={{color:"#f4caab"}}>Address</h2>
                               <div className='contact-text'>
@@ -120,7 +116,7 @@ export default function Contactus() {
                             <textarea name="message" rows="5" cols="50" placeholder="Message" style={{width:'90%', fontSize:'25px',width:"90%",border:'1px solid #BBB3B9'}}></textarea>
                           </form>
                           <br></br>
-                          <Button color="secondary" variant="contained" size='large'>Submit</Button>
+                          <Button href='/#' href="/contact-us" buttonStyle='btn--primary' buttonSize='btn--md' name='Make an Enquiry'/>
                           </ThemeProvider>
                       </Box>
                 </div>
