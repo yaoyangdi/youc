@@ -37,22 +37,22 @@ function Aboutus() {
         <div>
             <div className='main'>
                 <div  className="topparts" >
-                    <FlashOnSharpIcon style={{width:"60px",height:"60px",marginLeft:"40%"}}/>
+                    <FlashOnSharpIcon style={{width:"50px",height:"50px",marginLeft:"40%"}}/>
                     <h1>Free Delivery</h1>
                     <p>Orders over $150 (inc GST) delivered free to metro areas**</p>
                 </div>
                 <div className="topparts" >
-                    <BrightnessHighOutlinedIcon style={{width:"60px",height:"60px",marginLeft:"40%"}}/>
+                    <BrightnessHighOutlinedIcon style={{width:"50px",height:"50px",marginLeft:"40%"}}/>
                     <h1>Customer' Satisfaction</h1>                
                     <p>Our clients are our biggest asset. And customer loyalty is our ultimate goal. That's why customer service isn't just a department of YOUC, it is the cornerstone of our entire company.</p>
                 </div>
                 <div className="topparts">
-                    <LibraryBooksIcon style={{width:"60px",height:"60px",marginLeft:"40%"}}/>
+                    <LibraryBooksIcon style={{width:"50px",height:"50px",marginLeft:"40%"}}/>
                     <h1>Technology</h1>                
                     <p>Our software informs us of how we can build and improve our software to better meet the needs of our customers with each new update, and also tells us which things are already working well.</p>
                 </div>
                 <div className="topparts">
-                    <HowToRegIcon style={{width:"60px",height:"60px",marginLeft:"40%"}}/>
+                    <HowToRegIcon style={{width:"50px",height:"50px",marginLeft:"40%"}}/>
                     <h1>Customer Product</h1>                
                     <p>Our Custom Made Products are made to meet the requirements of each Individual Customer</p>
                 </div>                
