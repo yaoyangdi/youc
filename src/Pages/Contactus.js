@@ -44,7 +44,7 @@ export default function Contactus() {
 
                 <div className='textItemsss'>
                       <Box className='textItem1'>
-                          <h1 className='title'>Our Showroom</h1>
+                          <h1>Our Showroom</h1>
                           <div className='--p'>
                             <p color='#f4caab'> Book a FREE consultation and discover how we can help you.</p>
                           </div>
@@ -70,7 +70,7 @@ export default function Contactus() {
                       </Box>
 
                       <Box className='textItem2'>
-                        <h1 className='title'>Contact Us</h1>
+                        <h1>Contact Us</h1>
                         <form action="" method="get" >
                           <p>Full Name</p>
 
