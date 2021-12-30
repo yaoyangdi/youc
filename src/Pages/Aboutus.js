@@ -66,7 +66,7 @@ function Aboutus() {
                 </div>
 
                 <div className='textpart'>
-                    <h2><FiberManualRecordIcon style={{width:'50px',height:'25px',color:"#f4caab"}}/>Our Service Area</h2>
+                    <h2><FiberManualRecordIcon style={{width:'2rem', height:'1rem', color:"#f4caab"}}/>Our Service Area</h2>
 
                     <p>- Inner City municipalities: City of Melbourne, Port Phillip, Yarra.</p>
                     <p>- Northern municipalities: City of Banyule, Darebin, Hume, Moonee Valley, Moreland, Shine of Nillumbik, Whittlesea.</p>
@@ -76,7 +76,7 @@ function Aboutus() {
                     <br></br>
 
 
-                    <h2><FiberManualRecordIcon style={{width:'50px',height:'25px',color:"#f4caab"}}/>Return Policy</h2>
+                    <h2><FiberManualRecordIcon style={{width:'2rem', height:'1rem', color:"#f4caab"}}/>Return Policy</h2>
 
                     <p>
                     We want all our customers to be happy with their products from Youc. We offer a 31 Day Satisfaction Guarantee for all products purchased through us. If for any reason you are unable to use the product you have purchased, simply return it to us within 31 Days for a refund of the purchase price, less any delivery fees. We are unable to accept returns of any products after 31 days or if you have over ordered or simply no longer want them.
