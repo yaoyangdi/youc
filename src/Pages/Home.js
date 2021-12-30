@@ -64,7 +64,7 @@ function Home() {
                         <h1>Contact Us</h1>
                         <p>MAKE AN ENQUIRY TO FIND OUT MORE OR CALL US TODAY ON 03 9543 2288</p>
                     </div>
-                    <Button href='/#' href="/contact-us" buttonStyle='btn--primary' buttonSize='btn--md' name='Make an Enquiry'/>
+                    <Button href="/contact-us" buttonStyle='btn--primary' buttonSize='btn--md' name='Make an Enquiry'/>
                 </div>
 
 

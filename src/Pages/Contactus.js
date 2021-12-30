@@ -90,8 +90,9 @@ export default function Contactus() {
                         <Button href='/#' href="/contact-us" buttonStyle='btn--primary' buttonSize='btn--lg' name='Submit'/>
                       </Box>
                 </div>
-                <Footer />
-
+                <Box sx={{width:"100%"}}>
+                  <Footer />
+                </Box>
             </div>
 
     )

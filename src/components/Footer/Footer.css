@@ -80,8 +80,15 @@
         padding-left: 0em;
     }
 
+
     .footer-itemWithImg {
-        align-items: center;
-        padding-left: 4em;
+        margin-left: -5%;
+    }
+    
+    .footer-itemWithImg p{
+        font-size: 0.9em;
+        color: grey;
+        margin-left: 10%;
+        line-height: 0px;
     }
 }

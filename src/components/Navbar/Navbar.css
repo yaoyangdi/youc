@@ -106,6 +106,27 @@
         z-index:50;
         transition:  all 0.6s ease;
     }
+
+    .sidebar-item a{
+        text-decoration: none;
+        color: rgb(175, 179, 186);
+        font-size: 1.6em;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+    }
+    
+    .sidebar-item a:hover {
+        color: rgb(30, 36, 37);
+        display: flex;
+        align-items: center;
+        font-size: 1.6em;
+        font-weight: 500;
+        border-radius: 4px;
+        transition: all 0.2s ease-out;
+    }
+    
 }
 
 @media only screen and (max-width: 860px) {
