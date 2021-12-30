@@ -25,26 +25,26 @@
 }
 
 .nav-menu {
-    background-color: #fff;
+    background-color: transparent;
     width: 35%;
     height: 100%;
     display: flex;
     position: fixed;
     right: -100%;
     z-index:99;
-    transition:  all 1s ease;
+    transition:  all 0.6s ease;
 
 }
 
 .nav-menu.active {
     background-color: #fff;
-    width:35%;
+    width:30%;
     height: 100%;
     display: flex;
     position: fixed;
     right:0%;
     z-index:99;
-    transition:  all 1s ease;
+    transition:  all 0.6s ease;
 }
 
 .sidebar-item {
@@ -53,35 +53,40 @@
     justify-content: start;
     align-items: center;
     margin-top: 2vh;
-    padding: 2em 0em 0.35em 1em;
+    padding: 1em 0em 0.35em 0em;
     height: 2em;
 }
 
 .sidebar-items {
-    margin-top: 6em;
+    margin-top: 8em;
     
 }
 
 .sidebar-item a{
     text-decoration: none;
-    color: rgb(92, 90, 90);
-    font-size: 28px;
+    color: rgb(175, 179, 186);
+    font-size: 1.9em;
+    font-weight: 500;
     display: flex;
     align-items: center;
     border-radius: 4px;
 }
 
 .sidebar-item a:hover {
-    color: rgb(44, 63, 172);
-    font-weight: 600;
-    transition: 0.3s;
+    color: rgb(30, 36, 37);
+    display: flex;
+    align-items: center;
+    font-size: 1.9em;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
 }
 
 
 @media only screen and (max-width: 1040px) {
 
     .nav-menu {
-        background-color: #fff;
+        background-color: transparent;
         width: 100%;
         height: 100%;
         display: flex;
@@ -89,7 +94,7 @@
         right: -100%;
         z-index:50;
         opacity: 1;
-        transition:  all 0.7s ease;
+        transition:  all 0.6s ease;
     }
     
     .nav-menu.active {
@@ -99,7 +104,7 @@
         position: fixed;
         right:0%;
         z-index:50;
-        transition:  all 0.7s ease;
+        transition:  all 0.6s ease;
     }
 }
 

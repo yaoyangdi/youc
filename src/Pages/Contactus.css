@@ -4,6 +4,10 @@
     flex-wrap: wrap;
 }
 
+.title{
+    font-size: 2.5em;
+}
+
 .textItemsss {
     display: flex;
     width: 100%;
@@ -15,12 +19,14 @@
 .shownroom-text p{
     color:rgb(66, 64, 64);
     line-height: 1em;
+    font-size: 1.3em;
 
 }
 
 .contact-text p{
     color:rgb(66, 64, 64);
     line-height: 0.8em;
+    font-size: 1.3em;
 
 }
 
@@ -35,11 +41,15 @@
 
 }
 
+.--p {
+}
+
+
 
 @media only screen and (max-width: 1260px) {
 
     .textItem1 {
-        width: 100%;
+        width: 90%;
         margin-left: 5%;
         padding-right: 0em;
     }
@@ -48,5 +58,24 @@
         margin-left: 5%;
     }
     
+    .shownroom-text p{
+        color:rgb(66, 64, 64);
+        line-height: 1em;
+        font-size: 1em;
     
+    }
+    
+    .contact-text p{
+        color:rgb(66, 64, 64);
+        line-height: 0.8em;
+        font-size: 1em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .--p p{
+        font-size: 1em;
+    }
 }
