@@ -5,12 +5,18 @@ import Aboutus from './Pages/Aboutus';
 import Contactus from './Pages/Contactus';
 import Footer from './components/Footer/Footer';
 import Payterm from './Pages/PaymentTerm';
+import React, { useEffect } from 'react'
+
 
 import './App.css';
 import './assets/font.css'
 
 
 function App() {
+  useEffect(() => {
+    document.title = "Youc";
+ }, []);
+
   return (
     <>
     <Router>
