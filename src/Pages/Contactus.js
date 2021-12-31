@@ -1,7 +1,6 @@
 import React, {useRef,useState,useCallback} from 'react'
 import Box from '@mui/material/Box';
 import Button from '../components/Button';
-import Footer from '../components/Footer/Footer';
 
 import {
 	GoogleMap,
@@ -90,9 +89,6 @@ export default function Contactus() {
                         <Button href='/#' href="/contact-us" buttonStyle='btn--primary' buttonSize='btn--lg' name='Submit'/>
                       </Box>
                 </div>
-                <Box sx={{width:"100%"}}>
-                  <Footer />
-                </Box>
             </div>
 
     )

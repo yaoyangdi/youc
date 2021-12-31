@@ -38,13 +38,24 @@ function NavBar() {
                     <ul className='sidebar-items'>
                         { sidebarData.map((item, index) => {
                             return (
-                                <li key={index} className={item.cName}>
-                                    <Link 
-                                    to={item.path}
-                                    onClick={navItemClicked}
-                                    target={(item.path==='/order' || item.path ==='/online') ? '_blank' : '_self'}> 
+                                <li key={index} className={item.cName}>{
+                                    (item.path==='/order' || item.path ==='/online') ?
+                                    (
+                                        <a href={(item.path==='/order') ? 'https://fngp.com.au/fngonline'
+                                                                        : 'https://fngp.com.au/fngonlinestore/'}
+                                            target='blank'
+                                            onClick={navItemClicked}>
                                         {item.title}
-                                    </Link>
+                                        </a>
+                                    )
+                                    :
+                                    (<Link 
+                                        to={item.path}
+                                        onClick={navItemClicked}
+                                        > 
+                                            {item.title}
+                                        </Link>)
+                                    }
                                 </li>
                             )
                         })}

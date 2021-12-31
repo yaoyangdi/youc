@@ -1,6 +1,4 @@
 import React from 'react';
-import { Box}  from '@material-ui/core';
-
 import Button from '../components/Button'
 import './Home.css';
 
@@ -8,9 +6,6 @@ import ForumIcon from '@material-ui/icons/Forum';
 import CasinoIcon from '@material-ui/icons/Casino';
 import BuildIcon from '@material-ui/icons/Build';
 import PeopleIcon from '@material-ui/icons/People';
-
-
-import Footer from '../components/Footer/Footer';
 
 function Home() {
     return (
@@ -66,11 +61,6 @@ function Home() {
                     </div>
                     <Button href="/contact-us" buttonStyle='btn--primary' buttonSize='btn--md' name='Make an Enquiry'/>
                 </div>
-
-
-                  <Box sx={{width:"100%"}}>
-                    <Footer />
-                  </Box>
         </div>
     )
 }

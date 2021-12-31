@@ -5,14 +5,9 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '../components/Button'
-import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 import "./paymentterm.css";
 import { createTheme } from '@mui/material/styles';
-import { ThemeProvider } from '@mui/material/styles';
-
-import Footer from '../components/Footer/Footer';
-
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 const theme = createTheme({
@@ -116,16 +111,8 @@ function Payterm() {
 
                 </CardActions>
               </Card>
-
-
-    </div>
-    <Box sx={{width:"100%"}}>
-      <Footer/>
-    </Box>
-
-
-
-</div>
+            </div>
+        </div>
 
     )
 }

@@ -5,11 +5,7 @@ import FlashOnSharpIcon from '@material-ui/icons/FlashOnSharp';
 import BrightnessHighOutlinedIcon from '@material-ui/icons/BrightnessHighOutlined';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import HowToRegIcon from '@material-ui/icons/HowToReg';
-import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from '@mui/material/styles';
-import Footer from '../components/Footer/Footer';
-
-
 
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 const theme = createTheme({
@@ -179,10 +175,6 @@ function Aboutus() {
 
 
               </div>
-
-
-
-            <Footer/>
         </div>
     )
 }
