@@ -1,6 +1,8 @@
-import React, {useRef,useState,useCallback} from 'react'
+import React, {useRef, useState } from 'react'
 import Box from '@mui/material/Box';
 import Button from '../components/Button';
+import emailjs from '@emailjs/browser';
+import apiData from '../assets/data/apiData';
 
 import {
 	GoogleMap,
@@ -25,14 +27,30 @@ const center={
 }
 
 
-
 export default function Contactus() {
+  
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      // emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.USER_ID)
+      emailjs.sendForm(apiData.EMAILJS_SERVICE_ID, apiData.EMAILJS_TEMPLATE_ID, form.current, apiData.EMAILJS_USER_ID)
+        .then((result) => {
+            console.log(result.text);
+            alert('The message has been sent!');
+        }, (error) => {
+            console.log(error.text);
+            alert(JSON.stringify(error));
+        });
+    };
+
     return (
 
             <div className="main">
 
                 <LoadScript 
-                    googleMapsApiKey="AIzaSyAoJxtfyCL9v5Xc-wpKUbYbuArrvJViTEc">
+                    googleMapsApiKey={apiData.GOOGLEMAP_APIKEY}>
                         <GoogleMap
                             mapContainerStyle={mapContainerStyle}
                             center={center}
@@ -70,23 +88,32 @@ export default function Contactus() {
 
                       <Box className='textItem2'>
                         <h1>Contact Us</h1>
-                        <form action="" method="get" >
-                          <p>Full Name</p>
+                        <form onSubmit={sendEmail} ref={form} >
+                          <div class="field">
+                            <label for="user_name">Full Name: </label>
+                            <input type="text" name="user_name" id="user_name" required ></input>
+                          </div>
 
-                          <p><input id="GET-name" type="text"  name="name" style={{width:'90%',fontSize:'25px',width:'90%',height:'40px',border:'1px solid #BBB3B9'}}/></p>
+                          <div class="field" >
+                            <label for="user_phone">Phone: </label>
+                            <input type="text" name="user_phone" id="user_phone" required ></input>
+                          </div>
 
-                          <p>Phone</p>
-                          <p><input id="GET-name" type="text"  name="phone" style={{width:'90%',fontSize:'25px',width:'90%',height:'40px',border:'1px solid #BBB3B9'}}/></p>
+                          <div class="field">
+                            <label for="user_email">Email: </label>
+                            <input   type="text" name="user_email" id="user_email" required ></input>
+                          </div>
 
-                          <p>Email</p>
-                          <p><input id="GET-name" type="text"  name="email" style={{width:'90%',fontSize:'25px',width:'90%',height:'40px',border:'1px solid #BBB3B9'}}/></p>
+                          <div class="field">
+                            <label for="user_message">Message: </label>
+                            <textarea id="user_message" name="user_message" rows="5" cols="50" placeholder="Message" ></textarea>
+                          </div>
+                          <input className="btn btn--primary btn--lg" type="submit" id="button" value="Submit" ></input>
 
-                          <p>Message</p>  
-
-                          <textarea name="message" rows="5" cols="50" placeholder="Message" style={{width:'90%', fontSize:'25px',width:"90%",border:'1px solid #BBB3B9'}}></textarea>
+  
                         </form>
                         <br></br>
-                        <Button href='/#' href="/contact-us" buttonStyle='btn--primary' buttonSize='btn--lg' name='Submit'/>
+                        
                       </Box>
                 </div>
             </div>
