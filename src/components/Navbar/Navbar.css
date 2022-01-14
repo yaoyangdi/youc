@@ -24,6 +24,47 @@
     position: absolute;
 }
 
+.toogle{
+    margin-top: -1em;
+    margin-right: 15%;
+    width:2em;
+    height:2em;
+    background: transparent;
+    z-index:9999;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toogle::before{
+    content:'';
+    position: absolute;
+    width:55%;
+    height: 0.1em;
+    background:rgb(0, 0, 0);
+    transform: translateY(-0.2em);
+    transition: 0.2s;
+}
+
+.toogle::after{
+    content:'';
+    position: absolute;
+    width:55%;
+    height: 0.1em;
+    background:#000;
+    transform: translateY(0.2em);
+    transition: 0.2s;
+}
+
+.toogle.active::before{
+    transform: translateY(0px) rotate(45deg);
+}
+
+.toogle.active::after{
+    transform: translateY(0px) rotate(-45deg);
+}
+
 .nav-menu {
     background-color: transparent;
     width: 35%;
@@ -141,6 +182,20 @@
         border-radius: 4px;
         transition: all 0.2s ease-out;
     }
+
+        .toogle{
+        margin-top: -1em;
+        right: 10%;
+        width:2em;
+        height:2em;
+        background: transparent;
+        z-index:9999;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     
 }
 
@@ -161,6 +216,21 @@
         z-index:100;
         position: absolute;
     }
+
+    .toogle{
+        margin-top: -0.8em;
+        margin-right: 15%;
+        width:1.5em;
+        height:1.5em;
+        background: transparent;
+        z-index:9999;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 
     .navbar-container {
         background-color: #fff;

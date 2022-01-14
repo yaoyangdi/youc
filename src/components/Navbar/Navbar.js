@@ -10,6 +10,7 @@ import classes from './Navbar.css';
 function NavBar() {
     const [sidebar, setSidebar] = useState(false);
     const [button, setButton] = useState(true);
+    const [toogle, setToogle] = useState(false);
     const ref1 = useRef();
     const ref2 = useRef();
 
@@ -26,10 +27,16 @@ function NavBar() {
         ,[]);
 
     // Event listener 2: listen on the event whether the menu button is clicked => open / close the sidebar
-    const showSidebar = () => setSidebar(!sidebar);
+    const onToogle = () => {
+        setSidebar(!sidebar);
+        setToogle(!toogle);
+    }
 
     // Event listener 3: listen on the whichever nav item is clicked => close the sidebar
-    const sideBarClose = () => setSidebar(false);
+    const sideBarCollapsed = () => {
+        setSidebar(false);
+        setToogle(false);
+    };
 
   
 
@@ -39,7 +46,7 @@ function NavBar() {
             if (   (ref1.current && !ref1.current.contains(event.target) )
                 && (ref2.current && !ref2.current.contains(event.target) ) // BOTH ref is not the target of the event 
                ) {
-                sideBarClose();
+                sideBarCollapsed();
             }
         };
 
@@ -60,14 +67,14 @@ function NavBar() {
                                         <a href={(item.path==='/order') ? 'https://fngp.com.au/fngonline'
                                                                         : 'https://fngp.com.au/fngonlinestore/'}
                                             target='blank'
-                                            onClick={sideBarClose}>
+                                            onClick={sideBarCollapsed}>
                                         {item.title}
                                         </a>
                                     )
                                     :
                                     (<Link 
                                         to={item.path}
-                                        onClick={sideBarClose}
+                                        onClick={sideBarCollapsed}
                                         > 
                                             {item.title}
                                         </Link>)
@@ -79,12 +86,13 @@ function NavBar() {
             </nav>
 
             <div className= 'navbar-container'>
-                <Link to='/' onClick={showSidebar} className='logo-image'>
+                <Link to='/'className='logo-image'>
                     <img src={ logoImage }/>
                 </Link>
 
-                <Link to='#' className='menu-icon' onClick = {showSidebar} ref={ref2}>
-                    <MenuIcon  />
+                <Link to='#' className='menu-icon' onClick = {onToogle} ref={ref2}>
+                    {/* <MenuIcon  /> */}
+                    <div className={toogle ? 'toogle active' : 'toogle' }></div>
                 </Link>
             </div>
             
