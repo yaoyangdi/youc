@@ -12,6 +12,7 @@ export default function Contactus() {
   
     const form = useRef();
 
+    // Event listener on submit button clicked 
     const sendEmail = (e) => {
       e.preventDefault();
 
@@ -19,6 +20,13 @@ export default function Contactus() {
       emailjs.sendForm(apiData.EMAILJS_SERVICE_ID, apiData.EMAILJS_TEMPLATE_ID, form.current, apiData.EMAILJS_USER_ID)
         .then((result) => {
             console.log(result.text);
+            // clear all field value if submit successfully 
+            form.current.reset({
+              user_name: '',
+              user_email: '',
+              user_phone: '',
+              user_message: ''
+            });
             alert('The message has been sent!');
         }, (error) => {
             console.log(error.text);
@@ -53,7 +61,7 @@ export default function Contactus() {
                           </div>
                           <h2 style={{color:"rgb(213, 171, 132)"}}>Address</h2>
                           <div className='contact-text'>
-                            <p>43 Nicholaas Drive</p>
+                            <p>43 Nicholas Drive</p>
                             <p>monday-friday 9am-2pm</p>
                           </div>
 
