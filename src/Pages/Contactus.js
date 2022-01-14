@@ -2,7 +2,7 @@ import React, {useRef, useState } from 'react'
 import Box from '@mui/material/Box';
 import emailjs from '@emailjs/browser';
 import apiData from '../assets/data/apiData';
-import GoogleMap from '../components/googleMap/Map';
+import GoogleMap from '../components/googleMap/map/Map';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 import './Contactus.css';
