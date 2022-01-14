@@ -25,9 +25,9 @@ function Footer() {
 
                     <div className='footer-item'>
                         <h3>Contact</h3>
-                        <Link to='#'>03 9543 2288</Link >
+                        <Link to='/contact-us'>03 9543 2288</Link >
                         <br></br>
-                        <Link to='#'>info@youc.com.au</Link>
+                        <Link to='/contact-us'>info@youc.com.au</Link>
                     </div>
             </div>
         </Box>
