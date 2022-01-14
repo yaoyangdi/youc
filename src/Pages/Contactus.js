@@ -2,30 +2,10 @@ import React, {useRef, useState } from 'react'
 import Box from '@mui/material/Box';
 import emailjs from '@emailjs/browser';
 import apiData from '../assets/data/apiData';
-
-import {
-	GoogleMap,
-	LoadScript,
-	Marker,
-  InfoBox
-} from "@react-google-maps/api";
-
+import GoogleMap from '../components/googleMap/Map';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 import './Contactus.css';
-
-const mapContainerStyle={
-	width:"100%",
-	height:"450px",
-	float:"top",
-	margin:"5px",
-}
-
-
-const center={
-	lat:-38.037150,
-	lng:145.203140
-}
 
 
 export default function Contactus() {
@@ -50,18 +30,7 @@ export default function Contactus() {
     return (
 
             <div className="main">
-                <LoadScript 
-                    googleMapsApiKey={apiData.GOOGLEMAP_APIKEY}>
-                        <GoogleMap
-                            mapContainerStyle={mapContainerStyle}
-                            center={center}
-                            zoom={10}>
-                            <Marker position={center}/>
-                            <button>HH</button>
-
-                        </GoogleMap>
-
-                </LoadScript>
+                <GoogleMap/>
 
                 <div className='textItemsss'>
                       <Box className='textItem1'>
