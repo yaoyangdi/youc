@@ -65,7 +65,7 @@
 .sidebar-item a{
     text-decoration: none;
     color: rgb(175, 179, 186);
-    font-size: 1.9em;
+    font-size: 1.7em;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@
     color: rgb(30, 36, 37);
     display: flex;
     align-items: center;
-    font-size: 1.9em;
+    font-size: 1.7em;
     font-weight: 500;
     border-radius: 4px;
     transition: all 0.2s ease-out;
