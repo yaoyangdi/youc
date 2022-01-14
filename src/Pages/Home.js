@@ -8,8 +8,10 @@ import BuildIcon from '@material-ui/icons/Build';
 import PeopleIcon from '@material-ui/icons/People';
 
 function Home() {
+    const phoneCall = ()=>{
+        window.open('tel:0395432288');
+    }
     return (
-        
         <div>
 
                 <div className='header1'>
@@ -20,7 +22,7 @@ function Home() {
                           <br></br>
                           PACKAGING</p>
                   </div>
-                  <Button href='/#' buttonStyle='btn--primary' buttonSize='btn--lg' name='Call us 03 9543 2288'/>
+                  <Button href='/#' onClick={phoneCall} buttonStyle='btn--primary' buttonSize='btn--lg' name='Call us 03 9543 2288'/>
                 </div>
 
 
