@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect, useRef } from 'react';
 import {Toolbar, Box } from '@material-ui/core';
 import { AiOutlineMenu as MenuIcon} from "react-icons/ai";
 import { Link } from 'react-router-dom';
@@ -10,6 +10,8 @@ import classes from './Navbar.css';
 function NavBar() {
     const [sidebar, setSidebar] = useState(false);
     const [button, setButton] = useState(true);
+    const ref1 = useRef();
+    const ref2 = useRef();
 
     // Event listener 1: listen on the event whether the menu button is shown or not => button disappear or shown
     const showButton = () => {
@@ -27,14 +29,28 @@ function NavBar() {
     const showSidebar = () => setSidebar(!sidebar);
 
     // Event listener 3: listen on the whichever nav item is clicked => close the sidebar
-    const navItemClicked = () => setSidebar(false);
+    const sideBarClose = () => setSidebar(false);
 
   
+
+
+    useEffect(()=>{
+        const handleClickOutside = (event) => {
+            if (   (ref1.current && !ref1.current.contains(event.target) )
+                && (ref2.current && !ref2.current.contains(event.target) ) // BOTH ref is not the target of the event 
+               ) {
+                sideBarClose();
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+    })
+
 
     return (
         <Fragment>
 
-            <nav className={sidebar ? 'nav-menu active' : 'nav-menu' }>
+            <nav ref={ref1} className={sidebar ? 'nav-menu active' : 'nav-menu' }>
                     <ul className='sidebar-items'>
                         { sidebarData.map((item, index) => {
                             return (
@@ -44,14 +60,14 @@ function NavBar() {
                                         <a href={(item.path==='/order') ? 'https://fngp.com.au/fngonline'
                                                                         : 'https://fngp.com.au/fngonlinestore/'}
                                             target='blank'
-                                            onClick={navItemClicked}>
+                                            onClick={sideBarClose}>
                                         {item.title}
                                         </a>
                                     )
                                     :
                                     (<Link 
                                         to={item.path}
-                                        onClick={navItemClicked}
+                                        onClick={sideBarClose}
                                         > 
                                             {item.title}
                                         </Link>)
@@ -67,7 +83,7 @@ function NavBar() {
                     <img src={ logoImage }/>
                 </Link>
 
-                <Link to='#' className='menu-icon' onClick = {showSidebar}>
+                <Link to='#' className='menu-icon' onClick = {showSidebar} ref={ref2}>
                     <MenuIcon  />
                 </Link>
             </div>
