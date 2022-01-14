@@ -6,7 +6,7 @@ A front-end project developed by ReactJS which can be accessed via https://www.y
 
 - Develop a responsive website which can be run in PCs and mobile devices  
 
-- Sidebar is fully controlled and reasonable developed when clicking
+- Sidebar is fully controlled and reasonable responsed when clicking
 
 - Utilize EmailJS API to enable user to make an enquiry via form 
 
