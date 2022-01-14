@@ -9,7 +9,7 @@ function PlaceCard() {
             <div className="placecard__container">
               <div className="placecard__left">
                 <p className="placecard__business-name">YOUC PTY LTD</p>
-                <p className="placecard__info">43 Nicholaas Drive<br></br>Dandenong South<br></br>VIC 3175</p>
+                <p className="placecard__info">43 Nicholas Drive<br></br>Dandenong South<br></br>VIC 3175</p>
                 <a className="placecard__view-large" target="_blank" href="https://www.google.com/maps/place/YOUC+PTY+LTD+_+Food+Packaging/@-38.0371788,145.2008571,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad66b380619beeb:0x505af42bd478ef06!8m2!3d-38.037183!4d145.2030458?hl=en-US" id="A_41">View larger map</a>
               </div> {/* placecard__left */}
               <div className="placecard__right">
