@@ -5,7 +5,6 @@
     position: relative;
   }
   .placeDiv {
-    z-index: 9999;
     position: absolute;
   }
   .map-container {

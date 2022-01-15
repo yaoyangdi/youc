@@ -20,7 +20,7 @@
     margin-right: 5%;
     font-size: 2rem;
     background: none;
-    z-index:100;
+    z-index:9999;
     position: absolute;
 }
 
@@ -213,7 +213,7 @@
         margin-right: 0%;
         font-size: 1.6rem;
         background: none;
-        z-index:100;
+        z-index:9999;
         position: absolute;
     }
 
