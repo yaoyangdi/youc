@@ -211,7 +211,7 @@
         display: inline-block !important;
         max-width:7em;
         width: auto;
-        margin-left: 10%;
+        margin-left: 7%;
     }
 
     .menu-icon {
@@ -225,10 +225,10 @@
     }
 
     .toogle{
-        margin-top: -0.8em;
+        margin-top: -1.2em;
         margin-right: 15%;
-        width:1.5em;
-        height:1.5em;
+        width:1.6em;
+        height:1.6em;
         background: transparent;
         z-index:9999;
         position: absolute;
