@@ -1,8 +1,13 @@
+.logo-image {
+    
+    display: inline-block !important;
+    max-width:15em;
+    width: auto;
+    margin-left: 10%;
+}
+
 .logo-image img {
-    height: 45%;
-    width: 45%;
-    margin-left: 20%;
-    margin-top: 0.75rem;
+    width:100%;
 }
 
 .navbar-container {
@@ -20,7 +25,7 @@
     margin-right: 5%;
     font-size: 2rem;
     background: none;
-    z-index:100;
+    z-index:9999;
     position: absolute;
 }
 
@@ -44,7 +49,7 @@
     height: 0.1em;
     background:rgb(0, 0, 0);
     transform: translateY(-0.2em);
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .toogle::after{
@@ -54,7 +59,7 @@
     height: 0.1em;
     background:#000;
     transform: translateY(0.2em);
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .toogle.active::before{
@@ -149,7 +154,7 @@
     }
 
     .sidebar-items {
-        margin-top: 5%;
+        margin-top: 10%;
         margin-left: 0%;
         
     }    
@@ -159,14 +164,14 @@
         justify-content: start;
         align-items: center;
         margin-top: 2vh;
-        padding: 0.5em 0em 0.35em 0em;
+        padding: 1.2em 0em 0.35em 0em;
         height: 2em;
     }
 
     .sidebar-item a{
         text-decoration: none;
         color: rgb(175, 179, 186);
-        font-size: 1.2em;
+        font-size: 2em;
         font-weight: 500;
         display: flex;
         align-items: center;
@@ -177,7 +182,7 @@
         color: rgb(30, 36, 37);
         display: flex;
         align-items: center;
-        font-size: 1.6em;
+        font-size: 2em;
         font-weight: 500;
         border-radius: 4px;
         transition: all 0.2s ease-out;
@@ -200,11 +205,13 @@
 }
 
 @media only screen and (max-width: 860px) {
-    .logo-image img {
-        height: 19%;
-        width: 19%;
-        margin-left: 5%;
-        margin-top: 0.5rem;
+
+    .logo-image {
+    
+        display: inline-block !important;
+        max-width:7em;
+        width: auto;
+        margin-left: 7%;
     }
 
     .menu-icon {
@@ -213,15 +220,15 @@
         margin-right: 0%;
         font-size: 1.6rem;
         background: none;
-        z-index:100;
+        z-index:9999;
         position: absolute;
     }
 
     .toogle{
-        margin-top: -0.8em;
+        margin-top: -1.2em;
         margin-right: 15%;
-        width:1.5em;
-        height:1.5em;
+        width:1.6em;
+        height:1.6em;
         background: transparent;
         z-index:9999;
         position: absolute;
@@ -240,4 +247,88 @@
         align-items: center;
     }
     
+    .sidebar-items {
+        max-height: 200px;
+        margin-top: 20%;
+        overflow: 'auto'
+    }
+}
+
+
+/* Responsive for limited height for mobile phone rotated */
+
+@media only screen and (max-height: 500px) {
+    .sidebar-items {
+        margin-top: 8%;
+        overflow: 'auto'    
+    }
+
+    .sidebar-item {
+        display: flex;
+        font-style: italic;
+        justify-content: start;
+        align-items: center;
+        margin-top: 2vh;
+        padding: 0.5em 0em 0.35em 0em;
+        height: 2em;
+    }
+
+    .sidebar-item a{
+        text-decoration: none;
+        color: rgb(175, 179, 186);
+        font-size: 1.4em;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+    }
+    
+    .sidebar-item a:hover {
+        color: rgb(30, 36, 37);
+        display: flex;
+        align-items: center;
+        font-size: 1.4em;
+        font-weight: 500;
+        border-radius: 4px;
+        transition: all 0.2s ease-out;
+    }
+
+}
+
+@media only screen and (max-height: 300px) {
+    .sidebar-items {
+        margin-top: 8%;
+        overflow: 'auto'    
+    }
+
+    .sidebar-item {
+        display: flex;
+        font-style: italic;
+        justify-content: start;
+        align-items: center;
+        margin-top: 0vh;
+        padding: 0em 0em 0.35em 0em;
+        height: 2em;
+    }
+
+    .sidebar-item a{
+        text-decoration: none;
+        color: rgb(175, 179, 186);
+        font-size: 1em;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+    }
+    
+    .sidebar-item a:hover {
+        color: rgb(30, 36, 37);
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+        font-weight: 500;
+        border-radius: 4px;
+        transition: all 0.2s ease-out;
+    }
+
 }

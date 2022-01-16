@@ -86,7 +86,7 @@ function NavBar() {
             </nav>
 
             <div className= 'navbar-container'>
-                <Link to='/'className='logo-image'>
+                <Link to='/'  className='logo-image' >
                     <img src={ logoImage }/>
                 </Link>
 
