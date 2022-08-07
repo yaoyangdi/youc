@@ -1,4 +1,4 @@
-A front-end project developed by ReactJS which can be accessed via https://www.youc.com.au/
+This is my first front-end project developed by ReactJS which can be accessed via https://www.youc.com.au/
 
 
 
